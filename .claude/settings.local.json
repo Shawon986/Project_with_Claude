@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(sed -i 's/>District Price Analysis</>{{ t\\('\\\\''districtPriceAnalysis'\\\\''\\) }}</g' DistrictAnalysis.vue)",
+      "Bash(sed -i 's/>Cross-district comparison of Hangzhou housing prices</>{{ t\\('\\\\''districtDesc'\\\\''\\) }}</g' DistrictAnalysis.vue)",
+      "Bash(sed -i 's/>Most Expensive</>{{ t\\('\\\\''mostExpensive'\\\\''\\) }}</g' DistrictAnalysis.vue)",
+      "Bash(sed -i 's/>Most Affordable</>{{ t\\('\\\\''mostAffordable'\\\\''\\) }}</g' DistrictAnalysis.vue)",
+      "Bash(sed -i 's/>Price Spread</>{{ t\\('\\\\''priceSpread'\\\\''\\) }}</g' DistrictAnalysis.vue)",
+      "Bash(sed -i 's/>Geographic Intelligence Map</>{{ t\\('\\\\''geographicIntelligence'\\\\''\\) }}</g' MapView.vue)",
+      "Bash(sed -i 's/Live spatial analytics — Hangzhou housing market visualized across 12 districts with real-time data overlays/{{ t\\('\\\\''mapDesc'\\\\''\\) }}/g' MapView.vue)",
+      "Bash(sed -i 's/>Price Epicenter</>{{ t\\('\\\\''priceEpicenter'\\\\''\\) }}</g' MapView.vue)",
+      "Bash(sed -i 's/>Volume Hub</>{{ t\\('\\\\''volumeHub'\\\\''\\) }}</g' MapView.vue)",
+      "Bash(sed -i 's/>Spatial Gradient</>{{ t\\('\\\\''spatialGradient'\\\\''\\) }}</g' MapView.vue)",
+      "Bash(sed -i 's/>Home Buying Guide</>{{ t\\('\\\\''homeBuyingGuide'\\\\''\\) }}</g' Recommendations.vue)",
+      "Bash(sed -i 's/>Data-driven purchase recommendations based on comprehensive analysis</>{{ t\\('\\\\''recommendationsDesc'\\\\''\\) }}</g' Recommendations.vue)",
+      "Bash(sed -i 's/>Market Status</>{{ t\\('\\\\''marketStatus'\\\\''\\) }}</g' Recommendations.vue)",
+      "Bash(sed -i \"s/>Buyer's Market</>{{ t\\('buyersMarket'\\) }}</g\" Recommendations.vue)",
+      "Bash(sed -i 's/High inventory, moderate prices/{{ t\\('\\\\''highInventory'\\\\''\\) }}/g' Recommendations.vue)",
+      "Bash(sed -i \"s/📈 Price Increase/📈 {{ t\\('priceIncrease'\\) }}/g\" FactorAnalysis.vue)",
+      "Bash(sed -i \"s/📉 Price Decrease/📉 {{ t\\('priceDecrease'\\) }}/g\" FactorAnalysis.vue)",
+      "Bash(sed -i 's/>Coefficient</>{{ t\\('\\\\''coefficient'\\\\''\\) }}</g' FactorAnalysis.vue)",
+      "Bash(sed -i 's/>Std Error</>{{ t\\('\\\\''stdError'\\\\''\\) }}</g' FactorAnalysis.vue)",
+      "Bash(sed -i 's/>t-statistic</>{{ t\\('\\\\''tStatistic'\\\\''\\) }}</g' FactorAnalysis.vue)"
+    ]
+  }
+}

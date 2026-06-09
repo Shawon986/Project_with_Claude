@@ -1,0 +1,52 @@
+{
+  "district_avg_unit_price": {
+    "name": "Avg Unit Price by District",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\district_avg_unit_price.html",
+    "id": "district_avg_unit_price"
+  },
+  "total_price_distribution": {
+    "name": "Total Price Distribution",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\total_price_distribution.html",
+    "id": "total_price_distribution"
+  },
+  "area_vs_total_price": {
+    "name": "Area vs Total Price Scatter",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\area_vs_total_price.html",
+    "id": "area_vs_total_price"
+  },
+  "building_age_vs_unit_price": {
+    "name": "Building Age vs Unit Price Scatter",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\building_age_vs_unit_price.html",
+    "id": "building_age_vs_unit_price"
+  },
+  "avg_price_by_layout": {
+    "name": "Avg Total Price by Layout",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\avg_price_by_layout.html",
+    "id": "avg_price_by_layout"
+  },
+  "avg_price_by_decoration": {
+    "name": "Avg Unit Price by Decoration",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\avg_price_by_decoration.html",
+    "id": "avg_price_by_decoration"
+  },
+  "correlation_heatmap": {
+    "name": "Correlation Heatmap",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\correlation_heatmap.html",
+    "id": "correlation_heatmap"
+  },
+  "regression_results": {
+    "name": "Regression Model Results",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\regression_results.html",
+    "id": "regression_results"
+  },
+  "pca_factor_scores": {
+    "name": "PCA / Factor Score Chart",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\pca_factor_scores.html",
+    "id": "pca_factor_scores"
+  },
+  "cluster_results": {
+    "name": "Clustering Results",
+    "path": "C:\\Users\\shawo\\hangzhou-housing-analysis\\charts\\cluster_results.html",
+    "id": "cluster_results"
+  }
+}

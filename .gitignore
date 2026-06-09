@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files
+data/raw/*.csv
+data/raw/*.json
+data/cleaned/*.csv
+data/cleaned/*.json
+analysis/results/*.json
+analysis/results/*.csv
+
+# Charts
+charts/*.html
+
+# Database
+database/*.db
+*.sqlite3
+
+# Node
+node_modules/
+web/frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
