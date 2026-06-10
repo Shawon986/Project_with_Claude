@@ -21,7 +21,9 @@
       "Bash(sed -i \"s/📉 Price Decrease/📉 {{ t\\('priceDecrease'\\) }}/g\" FactorAnalysis.vue)",
       "Bash(sed -i 's/>Coefficient</>{{ t\\('\\\\''coefficient'\\\\''\\) }}</g' FactorAnalysis.vue)",
       "Bash(sed -i 's/>Std Error</>{{ t\\('\\\\''stdError'\\\\''\\) }}</g' FactorAnalysis.vue)",
-      "Bash(sed -i 's/>t-statistic</>{{ t\\('\\\\''tStatistic'\\\\''\\) }}</g' FactorAnalysis.vue)"
+      "Bash(sed -i 's/>t-statistic</>{{ t\\('\\\\''tStatistic'\\\\''\\) }}</g' FactorAnalysis.vue)",
+      "Bash(python app.py)",
+      "Bash(curl *)"
     ]
   }
 }
