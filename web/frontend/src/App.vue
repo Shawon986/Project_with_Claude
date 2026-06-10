@@ -2,7 +2,7 @@
   <LoadingScreen />
   <div class="app-container dark-theme" :class="{ 'mobile-sidebar-open': mobileMenuOpen }">
     <!-- Mobile overlay -->
-    <div class="mobile-overlay" v-if="mobileMenuOpen" @click="mobileMenuOpen=false"></div>
+    <div class="mobile-overlay" v-if="mobileMenuOpen" @click="mobileMenuOpen=false" @touchmove.prevent></div>
     <!-- Mobile hamburger -->
     <div class="mobile-hamburger" @click="mobileMenuOpen=!mobileMenuOpen">
       <span></span><span></span><span></span>
@@ -163,7 +163,7 @@
 </template>
 
 <script setup>
-import { computed, ref, provide, onMounted, onUnmounted } from 'vue'
+import { computed, ref, provide, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import LoadingScreen from './components/LoadingScreen.vue'
 import { useAppStore } from './stores/app'
@@ -179,13 +179,32 @@ const isCollapsed = ref(false)
 const mobileMenuOpen = ref(false)
 const isMobile = ref(window.innerWidth < 768)
 
+// Lock body scroll when mobile menu is open
+watch(mobileMenuOpen, (open) => {
+  if (open) {
+    document.body.style.overflow = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.width = '100%'
+  } else {
+    document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.width = ''
+  }
+})
+
 // Watch window resize
 function onResize() {
   isMobile.value = window.innerWidth < 768
   if (window.innerWidth >= 768) mobileMenuOpen.value = false
 }
 onMounted(() => window.addEventListener('resize', onResize))
-onUnmounted(() => window.removeEventListener('resize', onResize))
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+  // Clean up body styles
+  document.body.style.overflow = ''
+  document.body.style.position = ''
+  document.body.style.width = ''
+})
 
 const activeMenu = computed(() => route.path)
 
@@ -1261,6 +1280,11 @@ body {
     z-index: 99;
     transition: left 0.35s cubic-bezier(0.4,0,0.2,1) !important;
     width: 280px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
   }
   .sidebar-glass.mobile-visible {
     left: 0;
