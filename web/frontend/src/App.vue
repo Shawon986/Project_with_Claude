@@ -343,8 +343,8 @@ provide('isCollapsed', isCollapsed)
   --el-table-row-hover-bg-color: rgba(64,158,255,0.03);
   color: #374151 !important;
 }
-[data-theme="light"] .el-table :deep(td) { color: #374151 !important; border-bottom-color: rgba(0,0,0,0.04) !important; }
-[data-theme="light"] .el-table :deep(th) { color: #111827 !important; border-bottom-color: rgba(0,0,0,0.08) !important; background: #f9fafb; }
+[data-theme="light"] .el-table td { color: #374151 !important; border-bottom-color: rgba(0,0,0,0.04) !important; }
+[data-theme="light"] .el-table th { color: #111827 !important; border-bottom-color: rgba(0,0,0,0.08) !important; background: #f9fafb; }
 [data-theme="light"] .el-table--striped .el-table__body tr.el-table__row--striped td { background: #f9fafb; }
 [data-theme="light"] .el-table .el-table__body tr:hover > td { background-color: rgba(64,158,255,0.03) !important; }
 
@@ -1328,11 +1328,11 @@ body {
   .el-table {
     font-size: 12px !important;
   }
-  .el-table :deep(td),
-  .el-table :deep(th) {
+  .el-table td,
+  .el-table th {
     padding: 6px 8px !important;
   }
-  .el-table :deep(.el-table__body-wrapper) {
+  .el-table .el-table__body-wrapper {
     overflow-x: auto;
   }
 

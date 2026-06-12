@@ -67,12 +67,12 @@
       <div class="section-card">
         <h3>{{ t('districtExplorerTitle') }}</h3>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;max-height:380px;overflow-y:auto;padding-right:4px;">
-          <div v-for="d in districtMapData" :key="d.name"
+          <div v-for="d in districtMapData" :key="d.district"
             class="mini-dist-card"
             :class="{ active: selectedDistrict?.district === d.district }"
             @click="selectedDistrict = d">
             <div class="mini-dist-header">
-              <span class="mini-dist-name">{{ d.name }}</span>
+              <span class="mini-dist-name">{{ d.district }}</span>
               <span class="mini-dist-count">{{ d.count }}</span>
             </div>
             <div class="mini-dist-bar-wrap">
@@ -85,7 +85,7 @@
 
       <!-- Selected Detail -->
       <div class="section-card" v-if="selectedDistrict">
-        <h3>{{ selectedDistrict.name }} · {{ t('deepDiveTitle') }}</h3>
+        <h3>{{ selectedDistrict.district }} · {{ t('deepDiveTitle') }}</h3>
         <div style="display:grid;gap:10px;">
           <div class="detail-row"><span>Unit Price</span><strong style="color:var(--accent-cyan);">{{ selectedDistrict.avg_unit_price?.toLocaleString() }}</strong><span style="color:var(--text-muted);font-size:11px;">RMB/sqm</span></div>
           <div class="detail-row"><span>Total Price</span><strong style="color:var(--accent-green);">{{ selectedDistrict.avg_total_price?.toLocaleString() }}</strong><span style="color:var(--text-muted);font-size:11px;">(10k RMB)</span></div>
@@ -294,9 +294,9 @@ const connections = [
   ['Jianggan','Qiantang'],['Shangcheng','Xiacheng'],['Yuhang','Linping'],
 ]
 
-const hottestDistrict = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.avg_unit_price-a.avg_unit_price);return s[0]?.name||'-' })
+const hottestDistrict = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.avg_unit_price-a.avg_unit_price);return s[0]?.district||'-' })
 const hottestPrice = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.avg_unit_price-a.avg_unit_price);return s[0]?.avg_unit_price||0 })
-const densestDistrict = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.count-a.count);return s[0]?.name||'-' })
+const densestDistrict = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.count-a.count);return s[0]?.district||'-' })
 const densestCount = computed(() => { const s=[...districtMapData.value].sort((a,b)=>b.count-a.count);return s[0]?.count||0 })
 const priceGradient = computed(() => { if(!districtMapData.value.length)return'-';const s=[...districtMapData.value].sort((a,b)=>b.avg_unit_price-a.avg_unit_price);return (s[0].avg_unit_price/s[s.length-1].avg_unit_price).toFixed(1) })
 

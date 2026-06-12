@@ -48,8 +48,8 @@
         <el-table-column prop="feature" label="Feature" width="250" />
         <el-table-column prop="importance" label="Importance Score" width="350">
           <template #default="{ row }">
-            <el-progress :percentage="Math.min(row.importance*100, 100)" :stroke-width="18" :color="progressColor(row.importance)">
-              <span style="color:#fff;font-size:11px;font-weight:600;">{{ (row.importance*100).toFixed(1) }}%</span>
+            <el-progress :percentage="normalizedImportance(row.importance)" :stroke-width="18" :color="progressColor(row.importance)">
+              <span style="color:#fff;font-size:11px;font-weight:600;">{{ normalizedImportance(row.importance).toFixed(1) }}%</span>
             </el-progress>
           </template>
         </el-table-column>
@@ -76,10 +76,22 @@ const nClusters = computed(() => clusteringData.value?.n_clusters || 5)
 const totalClassified = computed(() => clusterProfiles.value.reduce((s, c) => s + c.size, 0))
 const da = { axisLabel: { color: '#9ca3af' }, nameTextStyle: { color: '#9ca3af' } }
 
+const maxFeatureImportance = computed(() => {
+  const items = discriminant.value?.feature_importance || []
+  if (!items.length) return 1
+  return Math.max(...items.map(i => i.importance))
+})
+
+function normalizedImportance(val) {
+  if (!maxFeatureImportance.value) return 0
+  return Math.min((val / maxFeatureImportance.value) * 100, 100)
+}
+
 function progressColor(val) {
-  if (val > 0.15) return '#409EFF'
-  if (val > 0.08) return '#67C23A'
-  if (val > 0.04) return '#E6A23C'
+  const pct = normalizedImportance(val)
+  if (pct > 60) return '#409EFF'
+  if (pct > 30) return '#67C23A'
+  if (pct > 10) return '#E6A23C'
   return '#909399'
 }
 
@@ -88,6 +100,8 @@ watch([clusteringData], async () => {
   if (!clusteringData.value?.inertias) return
   await nextTick()
   if (elbowChart.value) {
+    const existing = echarts.getInstanceByDom(elbowChart.value)
+    if (existing) existing.dispose()
     const c = echarts.init(elbowChart.value)
     c.setOption({
       tooltip: { trigger: 'axis', formatter: p => `K=${p[0].axisValue}<br/>Inertia: ${p[0].value.toFixed(0)}` },
@@ -121,6 +135,8 @@ watch([clusterProfiles], async () => {
   try {
     const cs = await getChartData('cluster_results')
     if (cs.data?.type === 'multi-scatter' && clusterChart.value) {
+      const existing = echarts.getInstanceByDom(clusterChart.value)
+      if (existing) existing.dispose()
       const c = echarts.init(clusterChart.value)
       c.setOption({
         tooltip: { trigger: 'item' },

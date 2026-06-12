@@ -677,9 +677,8 @@ const messages = {
     loading: 'Loading',
     error: 'Error',
     noData: 'No data available',
-  },
 
-  zh: {
+
     // === DETAILED PAGE CONTENT ===
     totalPriceRangeLabel: '总价区间',
     medianTotalPriceLabel: '总价中位数',

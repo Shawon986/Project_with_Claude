@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div v-else class="section-card"><el-empty description="{{ t('noPCAResults') }}" /></div>
+    <div v-else class="section-card"><el-empty :description="t('noPCAResults')" /></div>
 
     <div class="section-card">
       <h3>{{ t('factorAnalysis') }}</h3>
@@ -34,7 +34,7 @@
         </div>
         <div ref="faChart" style="height:400px"></div>
       </div>
-      <el-empty v-else description="{{ t('noFactorResults') }}" />
+      <el-empty v-else :description="t('noFactorResults')" />
     </div>
   </div>
 </template>

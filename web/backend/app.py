@@ -643,26 +643,30 @@ async def get_chart_data(chart_id: str):
         }
 
     elif chart_id == "cluster_results":
-        from sklearn.cluster import KMeans
-        from sklearn.preprocessing import StandardScaler
-        features = ["total_price", "floor_area", "unit_price"]
-        available = [c for c in features if c in df.columns]
-        X = df[available].dropna()
-        X_scaled = StandardScaler().fit_transform(X)
-        n_clusters = 5
-        km = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
-        labels = km.fit_predict(X_scaled)
+        # Use pre-computed labeled data instead of on-the-fly KMeans
+        # (sklearn.cluster import fails on some Windows systems due to DLL policy)
+        labeled_path = os.path.join(ANALYSIS_DIR, "labeled_data.csv")
+        if not os.path.exists(labeled_path):
+            return {"error": "Labeled cluster data not found. Run run_pipeline.py first."}
+
+        labeled = pd.read_csv(labeled_path)
+        available = ["total_price", "floor_area", "unit_price", "cluster"]
+        available = [c for c in available if c in labeled.columns]
+        if "cluster" not in labeled.columns:
+            return {"error": "No cluster column in labeled data"}
+
         colors = ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de"]
+        n_clusters = int(labeled["cluster"].nunique())
         series_data = []
-        for i in range(n_clusters):
-            cluster_pts = X[labels == i]
+        for i in sorted(labeled["cluster"].unique()):
+            cluster_pts = labeled[labeled["cluster"] == i]
             if len(cluster_pts) > 800:
                 cluster_pts = cluster_pts.sample(800, random_state=42)
             series_data.append({
-                "name": f"Cluster {i+1}",
+                "name": f"Cluster {int(i)+1}",
                 "data": [{"x": float(r["floor_area"]), "y": float(r["total_price"])}
                          for _, r in cluster_pts.iterrows()],
-                "color": colors[i % len(colors)],
+                "color": colors[int(i) % len(colors)],
             })
         return {
             "type": "multi-scatter",

@@ -23,7 +23,10 @@
       "Bash(sed -i 's/>Std Error</>{{ t\\('\\\\''stdError'\\\\''\\) }}</g' FactorAnalysis.vue)",
       "Bash(sed -i 's/>t-statistic</>{{ t\\('\\\\''tStatistic'\\\\''\\) }}</g' FactorAnalysis.vue)",
       "Bash(python app.py)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(./.venv/Scripts/python -c \"import fastapi; print\\('fastapi OK'\\)\")",
+      "Bash(./.venv/Scripts/python -c \"import pandas; print\\('pandas OK'\\)\")",
+      "Bash(./.venv/Scripts/python -c \"import numpy; print\\('numpy OK'\\)\")"
     ]
   }
 }

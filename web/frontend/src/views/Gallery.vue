@@ -148,6 +148,8 @@ async function loadAllCharts() {
     try {
       const res = await getChartData(chart.id)
       if (res.data && chartRefs[chart.id]) {
+        const existing = echarts.getInstanceByDom(chartRefs[chart.id])
+        if (existing) existing.dispose()
         const instance = echarts.init(chartRefs[chart.id])
         instance.setOption(buildChartOption(res.data))
       }
@@ -162,6 +164,9 @@ async function openFullscreen(chart) {
   try {
     const res = await getChartData(chart.id)
     if (res.data && fullscreenChart.value) {
+      // Dispose existing instance to avoid "dom already used" error
+      const existing = echarts.getInstanceByDom(fullscreenChart.value)
+      if (existing) existing.dispose()
       const instance = echarts.init(fullscreenChart.value)
       const opt = buildChartOption(res.data)
       opt.grid = opt.grid || {}
