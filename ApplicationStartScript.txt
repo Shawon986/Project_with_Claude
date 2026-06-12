@@ -1,0 +1,12 @@
+To run the website into your browser please follow the command below :
+
+
+you have to run the backend first
+
+To run the backend first :- 
+    Command :python -m uvicorn web.backend.app:app --reload --host 127.0.0.1 --port 8000
+
+To run the Website with frontend :-
+    Command : npm run dev (You have to run it after changing the path to C:\Users\shawo\hangzhou-housing-analysis\web\frontend inside your terminal)
+   
+!! You have to run these 2 commands into different terminal.!!
