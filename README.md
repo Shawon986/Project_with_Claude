@@ -34,7 +34,12 @@ hangzhou-housing-analysis/
 ├── analysis/results/              # 分析结果JSON
 ├── config.py                      # 全局配置
 ├── run_pipeline.py                # 一键运行脚本
-└── requirements.txt               # Python依赖
+├── api/                           # Vercel Serverless API (纯Python)
+│   └── index.py
+├── api_static/                    # 预计算的图表/统计JSON (Vercel用)
+├── vercel.json                    # Vercel 部署配置
+├── requirements.txt               # Vercel 精简依赖
+└── requirements-full.txt          # 本地完整分析依赖
 ```
 
 ---
@@ -44,7 +49,9 @@ hangzhou-housing-analysis/
 ### 1. 安装依赖
 
 ```bash
-pip install -r requirements.txt
+# 本地完整分析流程（采集/清洗/建模）依赖
+pip install -r requirements-full.txt
+# requirements.txt 仅包含 Vercel 部署所需的精简依赖 (FastAPI + Mangum)
 ```
 
 ### 2. 数据采集
@@ -156,6 +163,29 @@ cd web/frontend && npm install && npm run dev
 - `CLEANING`: 数据清洗阈值（异常值标准差、面积范围等）
 - `ANALYSIS`: 分析参数（聚类数K、因子数、随机种子）
 - `SERVER`: Web服务器配置（端口、地址）
+
+---
+
+## Vercel 部署
+
+网站已配置为可直接部署到 Vercel（前端静态托管 + 纯 Python Serverless API）：
+
+- `vercel.json` — 构建命令（构建 Vue 前端）、输出目录与路由重写
+- `api/index.py` — 纯 Python（无 pandas/numpy）的 API 实现，函数包体积小
+- `api_static/*.json` — 由 `scripts/precompute_deploy_data.py` 预计算的重型图表数据与描述性统计（与本地运行结果完全一致）
+- 数据文件（`data/cleaned/*.csv`、`analysis/results/*`）需随代码一起提交部署
+
+部署步骤：
+
+1. 确保数据文件已提交到 Git 仓库（已在 `.gitignore` 中忽略，需 `git add -f`）
+2. 将仓库推送到 GitHub
+3. 在 Vercel 中导入仓库即可自动构建部署（Build 命令与输出目录由 `vercel.json` 指定）
+
+若重新生成了数据或分析结果，先运行预计算脚本再重新部署：
+
+```bash
+.venv/Scripts/python.exe scripts/precompute_deploy_data.py
+```
 
 ---
 

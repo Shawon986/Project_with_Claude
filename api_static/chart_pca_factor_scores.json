@@ -1,0 +1,1 @@
+{"type": "bar", "title": "PCA Explained Variance", "x": ["PC1", "PC2", "PC3", "PC4", "PC5"], "y": [0.2151, 0.1557, 0.1336, 0.112, 0.075], "extraLine": [0.2151, 0.3708, 0.5044, 0.6164, 0.6914], "extraLabel": "Cumulative"}
