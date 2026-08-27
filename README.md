@@ -168,20 +168,19 @@ cd web/frontend && npm install && npm run dev
 
 ## Vercel 部署
 
-网站已配置为可直接部署到 Vercel（前端静态托管 + 纯 Python Serverless API）：
+网站已部署到 Vercel（Git 自动部署：推送 `master` 分支即自动构建上线）：
 
-- `vercel.json` — 构建命令（构建 Vue 前端）、输出目录与路由重写
-- `api/index.py` — 纯 Python（无 pandas/numpy）的 API 实现，函数包体积小
+- 线上地址：https://project-with-claude.vercel.app
+- Vercel 项目：`project-with-claude`（已关联 GitHub 仓库 `Shawon986/Project_with_Claude`）
+
+部署架构（单一纯 Python Serverless 函数承载全部流量）：
+
+- `vercel.json` — 构建命令（构建 Vue 前端）与路由重写（所有路径 → `/api/index?path=...`）
+- `api/index.py` — 纯 Python（无 pandas/numpy）的 FastAPI 实现：`/api/*` 接口 + 挂载 `dist/assets` + SPA 回退，函数包体积小
 - `api_static/*.json` — 由 `scripts/precompute_deploy_data.py` 预计算的重型图表数据与描述性统计（与本地运行结果完全一致）
-- 数据文件（`data/cleaned/*.csv`、`analysis/results/*`）需随代码一起提交部署
+- 数据文件（`data/cleaned/*.csv`、`analysis/results/*`、`web/frontend/dist/`）已纳入 Git，随代码一起部署
 
-部署步骤：
-
-1. 确保数据文件已提交到 Git 仓库（清洗后的部署数据已允许纳入 Git）
-2. 将仓库推送到 GitHub
-3. 在 Vercel 中导入仓库即可自动构建部署（Build 命令与输出目录由 `vercel.json` 指定）
-
-若重新生成了数据或分析结果，先运行预计算脚本再重新部署：
+若重新生成了数据或分析结果，先运行预计算脚本再提交部署：
 
 ```bash
 .venv/Scripts/python.exe scripts/precompute_deploy_data.py
