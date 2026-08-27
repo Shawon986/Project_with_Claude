@@ -30,8 +30,11 @@ data/cleaned/*.csv
 data/cleaned/*.json
 !data/cleaned/hangzhou_cleaned_3455_20260608_153036.csv
 !data/cleaned/hangzhou_cleaned_3455_20260608_153036.json
+# The Vercel API reads the precomputed analysis results at runtime.
 analysis/results/*.json
 analysis/results/*.csv
+!analysis/results/analysis_results.json
+!analysis/results/labeled_data.csv
 
 # Charts
 charts/*.html

@@ -1,0 +1,1637 @@
+{
+  "correlation": {
+    "correlation_matrix": {
+      "total_price": {
+        "total_price": 1.0,
+        "unit_price": 0.7095,
+        "floor_area": 0.505,
+        "rooms": 0.0157,
+        "halls": 0.003,
+        "total_floors": -0.018,
+        "construction_year": -0.1308,
+        "building_age": 0.1339,
+        "near_subway": 0.0614,
+        "decoration_level": 0.0105,
+        "floor_type_encoded": -0.0205,
+        "orientation_south": -0.0028,
+        "floor_ratio": -0.0205,
+        "price_per_room": 0.5788,
+        "area_per_room": 0.2235
+      },
+      "unit_price": {
+        "total_price": 0.7095,
+        "unit_price": 1.0,
+        "floor_area": -0.2029,
+        "rooms": 0.0089,
+        "halls": -0.0081,
+        "total_floors": -0.017,
+        "construction_year": -0.2746,
+        "building_age": 0.2753,
+        "near_subway": 0.0875,
+        "decoration_level": 0.0125,
+        "floor_type_encoded": -0.0161,
+        "orientation_south": -0.0022,
+        "floor_ratio": -0.0161,
+        "price_per_room": 0.4305,
+        "area_per_room": -0.0829
+      },
+      "floor_area": {
+        "total_price": 0.505,
+        "unit_price": -0.2029,
+        "floor_area": 1.0,
+        "rooms": 0.0182,
+        "halls": 0.015,
+        "total_floors": 0.0026,
+        "construction_year": 0.1407,
+        "building_age": -0.137,
+        "near_subway": -0.0191,
+        "decoration_level": 0.0005,
+        "floor_type_encoded": -0.0082,
+        "orientation_south": 0.0006,
+        "floor_ratio": -0.0082,
+        "price_per_room": 0.2691,
+        "area_per_room": 0.433
+      },
+      "rooms": {
+        "total_price": 0.0157,
+        "unit_price": 0.0089,
+        "floor_area": 0.0182,
+        "rooms": 1.0,
+        "halls": 0.673,
+        "total_floors": 0.0126,
+        "construction_year": -0.0135,
+        "building_age": 0.0109,
+        "near_subway": -0.0264,
+        "decoration_level": -0.0005,
+        "floor_type_encoded": 0.0046,
+        "orientation_south": 0.0043,
+        "floor_ratio": 0.0046,
+        "price_per_room": -0.655,
+        "area_per_room": -0.7515
+      },
+      "halls": {
+        "total_price": 0.003,
+        "unit_price": -0.0081,
+        "floor_area": 0.015,
+        "rooms": 0.673,
+        "halls": 1.0,
+        "total_floors": 0.02,
+        "construction_year": 0.0024,
+        "building_age": -0.0024,
+        "near_subway": -0.0189,
+        "decoration_level": -0.0013,
+        "floor_type_encoded": 0.0014,
+        "orientation_south": 0.002,
+        "floor_ratio": 0.0014,
+        "price_per_room": -0.5014,
+        "area_per_room": -0.5673
+      },
+      "total_floors": {
+        "total_price": -0.018,
+        "unit_price": -0.017,
+        "floor_area": 0.0026,
+        "rooms": 0.0126,
+        "halls": 0.02,
+        "total_floors": 1.0,
+        "construction_year": 0.0114,
+        "building_age": -0.0137,
+        "near_subway": 0.0003,
+        "decoration_level": -0.0148,
+        "floor_type_encoded": 0.0035,
+        "orientation_south": -0.004,
+        "floor_ratio": 0.0035,
+        "price_per_room": -0.0081,
+        "area_per_room": 0.0068
+      },
+      "construction_year": {
+        "total_price": -0.1308,
+        "unit_price": -0.2746,
+        "floor_area": 0.1407,
+        "rooms": -0.0135,
+        "halls": 0.0024,
+        "total_floors": 0.0114,
+        "construction_year": 1.0,
+        "building_age": -0.9784,
+        "near_subway": -0.0528,
+        "decoration_level": 0.0104,
+        "floor_type_encoded": -0.002,
+        "orientation_south": 0.0142,
+        "floor_ratio": -0.002,
+        "price_per_room": -0.0713,
+        "area_per_room": 0.0657
+      },
+      "building_age": {
+        "total_price": 0.1339,
+        "unit_price": 0.2753,
+        "floor_area": -0.137,
+        "rooms": 0.0109,
+        "halls": -0.0024,
+        "total_floors": -0.0137,
+        "construction_year": -0.9784,
+        "building_age": 1.0,
+        "near_subway": 0.0493,
+        "decoration_level": -0.0087,
+        "floor_type_encoded": -0.0009,
+        "orientation_south": -0.0121,
+        "floor_ratio": -0.0009,
+        "price_per_room": 0.0743,
+        "area_per_room": -0.0631
+      },
+      "near_subway": {
+        "total_price": 0.0614,
+        "unit_price": 0.0875,
+        "floor_area": -0.0191,
+        "rooms": -0.0264,
+        "halls": -0.0189,
+        "total_floors": 0.0003,
+        "construction_year": -0.0528,
+        "building_age": 0.0493,
+        "near_subway": 1.0,
+        "decoration_level": 0.0111,
+        "floor_type_encoded": 0.031,
+        "orientation_south": 0.0085,
+        "floor_ratio": 0.031,
+        "price_per_room": 0.0546,
+        "area_per_room": 0.0186
+      },
+      "decoration_level": {
+        "total_price": 0.0105,
+        "unit_price": 0.0125,
+        "floor_area": 0.0005,
+        "rooms": -0.0005,
+        "halls": -0.0013,
+        "total_floors": -0.0148,
+        "construction_year": 0.0104,
+        "building_age": -0.0087,
+        "near_subway": 0.0111,
+        "decoration_level": 1.0,
+        "floor_type_encoded": 0.0283,
+        "orientation_south": 0.0031,
+        "floor_ratio": 0.0283,
+        "price_per_room": 0.0157,
+        "area_per_room": -0.0022
+      },
+      "floor_type_encoded": {
+        "total_price": -0.0205,
+        "unit_price": -0.0161,
+        "floor_area": -0.0082,
+        "rooms": 0.0046,
+        "halls": 0.0014,
+        "total_floors": 0.0035,
+        "construction_year": -0.002,
+        "building_age": -0.0009,
+        "near_subway": 0.031,
+        "decoration_level": 0.0283,
+        "floor_type_encoded": 1.0,
+        "orientation_south": -0.0077,
+        "floor_ratio": 1.0,
+        "price_per_room": -0.0174,
+        "area_per_room": -0.0087
+      },
+      "orientation_south": {
+        "total_price": -0.0028,
+        "unit_price": -0.0022,
+        "floor_area": 0.0006,
+        "rooms": 0.0043,
+        "halls": 0.002,
+        "total_floors": -0.004,
+        "construction_year": 0.0142,
+        "building_age": -0.0121,
+        "near_subway": 0.0085,
+        "decoration_level": 0.0031,
+        "floor_type_encoded": -0.0077,
+        "orientation_south": 1.0,
+        "floor_ratio": -0.0077,
+        "price_per_room": 0.0008,
+        "area_per_room": -0.0038
+      },
+      "floor_ratio": {
+        "total_price": -0.0205,
+        "unit_price": -0.0161,
+        "floor_area": -0.0082,
+        "rooms": 0.0046,
+        "halls": 0.0014,
+        "total_floors": 0.0035,
+        "construction_year": -0.002,
+        "building_age": -0.0009,
+        "near_subway": 0.031,
+        "decoration_level": 0.0283,
+        "floor_type_encoded": 1.0,
+        "orientation_south": -0.0077,
+        "floor_ratio": 1.0,
+        "price_per_room": -0.0174,
+        "area_per_room": -0.0087
+      },
+      "price_per_room": {
+        "total_price": 0.5788,
+        "unit_price": 0.4305,
+        "floor_area": 0.2691,
+        "rooms": -0.655,
+        "halls": -0.5014,
+        "total_floors": -0.0081,
+        "construction_year": -0.0713,
+        "building_age": 0.0743,
+        "near_subway": 0.0546,
+        "decoration_level": 0.0157,
+        "floor_type_encoded": -0.0174,
+        "orientation_south": 0.0008,
+        "floor_ratio": -0.0174,
+        "price_per_room": 1.0,
+        "area_per_room": 0.8129
+      },
+      "area_per_room": {
+        "total_price": 0.2235,
+        "unit_price": -0.0829,
+        "floor_area": 0.433,
+        "rooms": -0.7515,
+        "halls": -0.5673,
+        "total_floors": 0.0068,
+        "construction_year": 0.0657,
+        "building_age": -0.0631,
+        "near_subway": 0.0186,
+        "decoration_level": -0.0022,
+        "floor_type_encoded": -0.0087,
+        "orientation_south": -0.0038,
+        "floor_ratio": -0.0087,
+        "price_per_room": 0.8129,
+        "area_per_room": 1.0
+      }
+    },
+    "price_correlations": {
+      "total_price": {
+        "positive": [
+          {
+            "feature": "unit_price",
+            "correlation": 0.7095
+          },
+          {
+            "feature": "price_per_room",
+            "correlation": 0.5788
+          },
+          {
+            "feature": "floor_area",
+            "correlation": 0.505
+          },
+          {
+            "feature": "area_per_room",
+            "correlation": 0.2235
+          },
+          {
+            "feature": "building_age",
+            "correlation": 0.1339
+          },
+          {
+            "feature": "near_subway",
+            "correlation": 0.0614
+          },
+          {
+            "feature": "rooms",
+            "correlation": 0.0157
+          },
+          {
+            "feature": "decoration_level",
+            "correlation": 0.0105
+          },
+          {
+            "feature": "halls",
+            "correlation": 0.003
+          }
+        ],
+        "negative": [
+          {
+            "feature": "orientation_south",
+            "correlation": -0.0028
+          },
+          {
+            "feature": "total_floors",
+            "correlation": -0.018
+          },
+          {
+            "feature": "floor_type_encoded",
+            "correlation": -0.0205
+          },
+          {
+            "feature": "floor_ratio",
+            "correlation": -0.0205
+          },
+          {
+            "feature": "construction_year",
+            "correlation": -0.1308
+          }
+        ]
+      },
+      "unit_price": {
+        "positive": [
+          {
+            "feature": "total_price",
+            "correlation": 0.7095
+          },
+          {
+            "feature": "price_per_room",
+            "correlation": 0.4305
+          },
+          {
+            "feature": "building_age",
+            "correlation": 0.2753
+          },
+          {
+            "feature": "near_subway",
+            "correlation": 0.0875
+          },
+          {
+            "feature": "decoration_level",
+            "correlation": 0.0125
+          },
+          {
+            "feature": "rooms",
+            "correlation": 0.0089
+          }
+        ],
+        "negative": [
+          {
+            "feature": "orientation_south",
+            "correlation": -0.0022
+          },
+          {
+            "feature": "halls",
+            "correlation": -0.0081
+          },
+          {
+            "feature": "floor_type_encoded",
+            "correlation": -0.0161
+          },
+          {
+            "feature": "floor_ratio",
+            "correlation": -0.0161
+          },
+          {
+            "feature": "total_floors",
+            "correlation": -0.017
+          },
+          {
+            "feature": "area_per_room",
+            "correlation": -0.0829
+          },
+          {
+            "feature": "floor_area",
+            "correlation": -0.2029
+          },
+          {
+            "feature": "construction_year",
+            "correlation": -0.2746
+          }
+        ]
+      }
+    }
+  },
+  "regression": {
+    "ols": {
+      "r_squared": 0.5604,
+      "r_squared_adj": 0.5579,
+      "f_statistic": 218.92,
+      "f_pvalue": 0.0,
+      "aic": 40701.73,
+      "bic": 40830.83,
+      "n_observations": 3455,
+      "significant_features": [
+        {
+          "feature": "floor_area",
+          "coefficient": 3.3651,
+          "std_error": 0.0617,
+          "t_statistic": 54.5446,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Gongshu",
+          "coefficient": 67.9949,
+          "std_error": 4.5279,
+          "t_statistic": 15.0169,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Jianggan",
+          "coefficient": 39.7845,
+          "std_error": 4.724,
+          "t_statistic": 8.4218,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Linan",
+          "coefficient": -155.4418,
+          "std_error": 8.2349,
+          "t_statistic": -18.8761,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Fuyang",
+          "coefficient": -117.2716,
+          "std_error": 6.7204,
+          "t_statistic": -17.4502,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Binjiang",
+          "coefficient": 78.7152,
+          "std_error": 4.9137,
+          "t_statistic": 16.0196,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Qiantang",
+          "coefficient": -57.7662,
+          "std_error": 5.8815,
+          "t_statistic": -9.8217,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Linping",
+          "coefficient": -82.81,
+          "std_error": 5.4224,
+          "t_statistic": -15.2718,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Xiacheng",
+          "coefficient": 76.2637,
+          "std_error": 6.1824,
+          "t_statistic": 12.3356,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Shangcheng",
+          "coefficient": 96.4968,
+          "std_error": 5.5578,
+          "t_statistic": 17.3624,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Yuhang",
+          "coefficient": -42.0039,
+          "std_error": 4.0988,
+          "t_statistic": -10.2479,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Xihu",
+          "coefficient": 104.5032,
+          "std_error": 4.6047,
+          "t_statistic": 22.6947,
+          "p_value": 0.0
+        },
+        {
+          "feature": "near_subway",
+          "coefficient": 10.0289,
+          "std_error": 2.9959,
+          "t_statistic": 3.3475,
+          "p_value": 0.000824
+        },
+        {
+          "feature": "district_Xiaoshan",
+          "coefficient": -12.4016,
+          "std_error": 4.2739,
+          "t_statistic": -2.9017,
+          "p_value": 0.003735
+        }
+      ],
+      "all_coefficients": [
+        {
+          "feature": "floor_area",
+          "coefficient": 3.3651,
+          "std_error": 0.0617,
+          "t_statistic": 54.5446,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Gongshu",
+          "coefficient": 67.9949,
+          "std_error": 4.5279,
+          "t_statistic": 15.0169,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Jianggan",
+          "coefficient": 39.7845,
+          "std_error": 4.724,
+          "t_statistic": 8.4218,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Linan",
+          "coefficient": -155.4418,
+          "std_error": 8.2349,
+          "t_statistic": -18.8761,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Fuyang",
+          "coefficient": -117.2716,
+          "std_error": 6.7204,
+          "t_statistic": -17.4502,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Binjiang",
+          "coefficient": 78.7152,
+          "std_error": 4.9137,
+          "t_statistic": 16.0196,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Qiantang",
+          "coefficient": -57.7662,
+          "std_error": 5.8815,
+          "t_statistic": -9.8217,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Linping",
+          "coefficient": -82.81,
+          "std_error": 5.4224,
+          "t_statistic": -15.2718,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Xiacheng",
+          "coefficient": 76.2637,
+          "std_error": 6.1824,
+          "t_statistic": 12.3356,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Shangcheng",
+          "coefficient": 96.4968,
+          "std_error": 5.5578,
+          "t_statistic": 17.3624,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Yuhang",
+          "coefficient": -42.0039,
+          "std_error": 4.0988,
+          "t_statistic": -10.2479,
+          "p_value": 0.0
+        },
+        {
+          "feature": "district_Xihu",
+          "coefficient": 104.5032,
+          "std_error": 4.6047,
+          "t_statistic": 22.6947,
+          "p_value": 0.0
+        },
+        {
+          "feature": "near_subway",
+          "coefficient": 10.0289,
+          "std_error": 2.9959,
+          "t_statistic": 3.3475,
+          "p_value": 0.000824
+        },
+        {
+          "feature": "district_Xiaoshan",
+          "coefficient": -12.4016,
+          "std_error": 4.2739,
+          "t_statistic": -2.9017,
+          "p_value": 0.003735
+        },
+        {
+          "feature": "floor_type_encoded",
+          "coefficient": -2.0655,
+          "std_error": 1.9137,
+          "t_statistic": -1.0794,
+          "p_value": 0.280506
+        },
+        {
+          "feature": "floor_ratio",
+          "coefficient": -1.5006,
+          "std_error": 1.941,
+          "t_statistic": -0.7731,
+          "p_value": 0.439514
+        },
+        {
+          "feature": "building_age",
+          "coefficient": 0.1133,
+          "std_error": 0.2032,
+          "t_statistic": 0.5578,
+          "p_value": 0.577008
+        },
+        {
+          "feature": "const",
+          "coefficient": -3.9368,
+          "std_error": 8.4265,
+          "t_statistic": -0.4672,
+          "p_value": 0.640394
+        },
+        {
+          "feature": "rooms",
+          "coefficient": 0.4554,
+          "std_error": 1.8308,
+          "t_statistic": 0.2487,
+          "p_value": 0.803575
+        },
+        {
+          "feature": "total_floors",
+          "coefficient": 0.0396,
+          "std_error": 0.1646,
+          "t_statistic": 0.2407,
+          "p_value": 0.809816
+        },
+        {
+          "feature": "orientation_south",
+          "coefficient": -0.6654,
+          "std_error": 3.444,
+          "t_statistic": -0.1932,
+          "p_value": 0.846822
+        },
+        {
+          "feature": "halls",
+          "coefficient": 0.308,
+          "std_error": 3.5147,
+          "t_statistic": 0.0876,
+          "p_value": 0.930172
+        },
+        {
+          "feature": "decoration_level",
+          "coefficient": -0.0549,
+          "std_error": 1.3199,
+          "t_statistic": -0.0416,
+          "p_value": 0.966825
+        }
+      ]
+    },
+    "linear": {
+      "r_squared": 0.5604,
+      "cv_r2_mean": 0.5524,
+      "cv_r2_std": 0.0227,
+      "intercept": -4.4964,
+      "top_features": [
+        {
+          "feature": "district_Linan",
+          "coefficient": -155.1138
+        },
+        {
+          "feature": "district_Fuyang",
+          "coefficient": -116.9435
+        },
+        {
+          "feature": "district_Xihu",
+          "coefficient": 104.8313
+        },
+        {
+          "feature": "district_Shangcheng",
+          "coefficient": 96.8249
+        },
+        {
+          "feature": "district_Linping",
+          "coefficient": -82.482
+        },
+        {
+          "feature": "district_Binjiang",
+          "coefficient": 79.0433
+        },
+        {
+          "feature": "district_Xiacheng",
+          "coefficient": 76.5918
+        },
+        {
+          "feature": "district_Gongshu",
+          "coefficient": 68.3229
+        },
+        {
+          "feature": "district_Qiantang",
+          "coefficient": -57.4381
+        },
+        {
+          "feature": "district_Yuhang",
+          "coefficient": -41.6758
+        }
+      ],
+      "all_coefficients": [
+        {
+          "feature": "district_Linan",
+          "coefficient": -155.1138
+        },
+        {
+          "feature": "district_Fuyang",
+          "coefficient": -116.9435
+        },
+        {
+          "feature": "district_Xihu",
+          "coefficient": 104.8313
+        },
+        {
+          "feature": "district_Shangcheng",
+          "coefficient": 96.8249
+        },
+        {
+          "feature": "district_Linping",
+          "coefficient": -82.482
+        },
+        {
+          "feature": "district_Binjiang",
+          "coefficient": 79.0433
+        },
+        {
+          "feature": "district_Xiacheng",
+          "coefficient": 76.5918
+        },
+        {
+          "feature": "district_Gongshu",
+          "coefficient": 68.3229
+        },
+        {
+          "feature": "district_Qiantang",
+          "coefficient": -57.4381
+        },
+        {
+          "feature": "district_Yuhang",
+          "coefficient": -41.6758
+        },
+        {
+          "feature": "district_Jianggan",
+          "coefficient": 40.1126
+        },
+        {
+          "feature": "district_Xiaoshan",
+          "coefficient": -12.0736
+        },
+        {
+          "feature": "near_subway",
+          "coefficient": 10.0289
+        },
+        {
+          "feature": "floor_area",
+          "coefficient": 3.3651
+        },
+        {
+          "feature": "floor_type_encoded",
+          "coefficient": -2.2971
+        },
+        {
+          "feature": "orientation_south",
+          "coefficient": -0.6654
+        },
+        {
+          "feature": "floor_ratio",
+          "coefficient": -0.5743
+        },
+        {
+          "feature": "rooms",
+          "coefficient": 0.4554
+        },
+        {
+          "feature": "halls",
+          "coefficient": 0.308
+        },
+        {
+          "feature": "building_age",
+          "coefficient": 0.1133
+        },
+        {
+          "feature": "decoration_level",
+          "coefficient": -0.0549
+        },
+        {
+          "feature": "total_floors",
+          "coefficient": 0.0396
+        }
+      ]
+    },
+    "ridge": {
+      "alpha": 1.0,
+      "r_squared": 0.5604,
+      "cv_r2_mean": 0.5524,
+      "cv_r2_std": 0.0226,
+      "top_features": [
+        {
+          "feature": "district_Linan",
+          "coefficient": -153.5897
+        },
+        {
+          "feature": "district_Fuyang",
+          "coefficient": -116.2257
+        },
+        {
+          "feature": "district_Xihu",
+          "coefficient": 104.3291
+        },
+        {
+          "feature": "district_Shangcheng",
+          "coefficient": 96.1388
+        },
+        {
+          "feature": "district_Linping",
+          "coefficient": -82.2035
+        },
+        {
+          "feature": "district_Binjiang",
+          "coefficient": 78.6997
+        },
+        {
+          "feature": "district_Xiacheng",
+          "coefficient": 75.927
+        },
+        {
+          "feature": "district_Gongshu",
+          "coefficient": 67.9587
+        },
+        {
+          "feature": "district_Qiantang",
+          "coefficient": -57.1585
+        },
+        {
+          "feature": "district_Yuhang",
+          "coefficient": -41.5943
+        }
+      ]
+    }
+  },
+  "pca_factor": {
+    "pca": {
+      "n_components": 5,
+      "explained_variance_ratio": [
+        0.2151,
+        0.1557,
+        0.1336,
+        0.112,
+        0.075
+      ],
+      "cumulative_variance": [
+        0.2151,
+        0.3707,
+        0.5044,
+        0.6164,
+        0.6914
+      ],
+      "loadings": {
+        "PC1": {
+          "total_price": 0.2895,
+          "unit_price": 0.172,
+          "floor_area": 0.1965,
+          "rooms": -0.4289,
+          "halls": -0.3727,
+          "total_floors": -0.0103,
+          "construction_year": -0.0495,
+          "building_age": 0.0513,
+          "near_subway": 0.0401,
+          "decoration_level": 0.0052,
+          "floor_type_encoded": -0.0202,
+          "orientation_south": -0.0026,
+          "floor_ratio": -0.0202,
+          "price_per_room": 0.5263,
+          "area_per_room": 0.4904
+        },
+        "PC2": {
+          "total_price": -0.2914,
+          "unit_price": -0.4358,
+          "floor_area": 0.1213,
+          "rooms": -0.1701,
+          "halls": -0.143,
+          "total_floors": 0.0177,
+          "construction_year": 0.5535,
+          "building_age": -0.5535,
+          "near_subway": -0.0789,
+          "decoration_level": 0.0009,
+          "floor_type_encoded": 0.0213,
+          "orientation_south": 0.0102,
+          "floor_ratio": 0.0213,
+          "price_per_room": -0.0505,
+          "area_per_room": 0.1954
+        },
+        "PC3": {
+          "total_price": -0.0268,
+          "unit_price": -0.0064,
+          "floor_area": -0.0291,
+          "rooms": -0.0322,
+          "halls": -0.0328,
+          "total_floors": 0.0028,
+          "construction_year": -0.0423,
+          "building_age": 0.0402,
+          "near_subway": 0.0485,
+          "decoration_level": 0.0391,
+          "floor_type_encoded": 0.7031,
+          "orientation_south": -0.0115,
+          "floor_ratio": 0.7031,
+          "price_per_room": 0.0074,
+          "area_per_room": 0.0139
+        },
+        "PC4": {
+          "total_price": 0.544,
+          "unit_price": 0.2479,
+          "floor_area": 0.4619,
+          "rooms": 0.3414,
+          "halls": 0.3396,
+          "total_floors": 0.0068,
+          "construction_year": 0.3005,
+          "building_age": -0.299,
+          "near_subway": 0.0109,
+          "decoration_level": 0.0275,
+          "floor_type_encoded": 0.0535,
+          "orientation_south": 0.0116,
+          "floor_ratio": 0.0535,
+          "price_per_room": 0.0842,
+          "area_per_room": -0.0618
+        },
+        "PC5": {
+          "total_price": -0.0336,
+          "unit_price": -0.5091,
+          "floor_area": 0.5999,
+          "rooms": 0.1009,
+          "halls": 0.1271,
+          "total_floors": 0.0927,
+          "construction_year": -0.304,
+          "building_age": 0.3059,
+          "near_subway": -0.2792,
+          "decoration_level": -0.1486,
+          "floor_type_encoded": 0.0082,
+          "orientation_south": -0.0795,
+          "floor_ratio": 0.0082,
+          "price_per_room": -0.0947,
+          "area_per_room": 0.2083
+        }
+      },
+      "top_loadings": {
+        "PC1": {
+          "price_per_room": 0.5263,
+          "area_per_room": 0.4904,
+          "rooms": 0.4289,
+          "halls": 0.3727,
+          "total_price": 0.2895
+        },
+        "PC2": {
+          "construction_year": 0.5535,
+          "building_age": 0.5535,
+          "unit_price": 0.4358,
+          "total_price": 0.2914,
+          "area_per_room": 0.1954
+        },
+        "PC3": {
+          "floor_type_encoded": 0.7031,
+          "floor_ratio": 0.7031,
+          "near_subway": 0.0485,
+          "construction_year": 0.0423,
+          "building_age": 0.0402
+        },
+        "PC4": {
+          "total_price": 0.544,
+          "floor_area": 0.4619,
+          "rooms": 0.3414,
+          "halls": 0.3396,
+          "construction_year": 0.3005
+        },
+        "PC5": {
+          "floor_area": 0.5999,
+          "unit_price": 0.5091,
+          "building_age": 0.3059,
+          "construction_year": 0.304,
+          "near_subway": 0.2792
+        }
+      },
+      "scores_summary": {
+        "mean": {
+          "PC1": 0.0,
+          "PC2": -0.0,
+          "PC3": -0.0,
+          "PC4": 0.0,
+          "PC5": -0.0
+        },
+        "std": {
+          "PC1": 1.7963,
+          "PC2": 1.5284,
+          "PC3": 1.416,
+          "PC4": 1.2962,
+          "PC5": 1.0611
+        }
+      },
+      "composite_score": {
+        "mean": 0.0,
+        "std": 0.7502,
+        "min": -2.4585,
+        "max": 3.1405
+      }
+    },
+    "factor_analysis": {
+      "n_factors": 5,
+      "bartlett_chi2": null,
+      "bartlett_pvalue": null,
+      "kmo_model": 0.530587,
+      "kmo_per_variable": {
+        "total_price": 0.387254,
+        "unit_price": 0.399957,
+        "floor_area": 0.24103,
+        "rooms": 0.844366,
+        "halls": 0.900129,
+        "total_floors": 0.412301,
+        "construction_year": 0.531185,
+        "building_age": 0.531253,
+        "near_subway": 0.838212,
+        "decoration_level": 0.298306,
+        "floor_type_encoded": 0.500172,
+        "orientation_south": 0.263593,
+        "floor_ratio": 0.500172,
+        "price_per_room": 0.655446,
+        "area_per_room": 0.608026
+      },
+      "variance_explained": [
+        2.680374,
+        1.986545,
+        1.930759,
+        1.87522,
+        1.53916
+      ],
+      "cumulative_variance": [
+        0.178692,
+        0.311128,
+        0.439845,
+        0.56486,
+        0.667471
+      ],
+      "loadings": {
+        "Factor1": {
+          "total_price": 0.0144,
+          "unit_price": -0.0583,
+          "floor_area": 0.0909,
+          "rooms": -0.9056,
+          "halls": -0.6956,
+          "total_floors": -0.0072,
+          "construction_year": 0.0455,
+          "building_age": -0.0434,
+          "near_subway": 0.0221,
+          "decoration_level": 0.0017,
+          "floor_type_encoded": -0.0119,
+          "orientation_south": -0.0025,
+          "floor_ratio": -0.0119,
+          "price_per_room": 0.7555,
+          "area_per_room": 0.8883
+        },
+        "Factor2": {
+          "total_price": 0.0223,
+          "unit_price": 0.0286,
+          "floor_area": -0.003,
+          "rooms": -0.006,
+          "halls": -0.0062,
+          "total_floors": 0.0032,
+          "construction_year": 0.0966,
+          "building_age": -0.0978,
+          "near_subway": 0.0319,
+          "decoration_level": 0.0306,
+          "floor_type_encoded": 0.9909,
+          "orientation_south": -0.006,
+          "floor_ratio": 0.9909,
+          "price_per_room": 0.0175,
+          "area_per_room": 0.0037
+        },
+        "Factor3": {
+          "total_price": 0.7608,
+          "unit_price": 0.9907,
+          "floor_area": -0.1274,
+          "rooms": -0.0364,
+          "halls": -0.0402,
+          "total_floors": -0.0191,
+          "construction_year": -0.2099,
+          "building_age": 0.2117,
+          "near_subway": 0.0847,
+          "decoration_level": 0.015,
+          "floor_type_encoded": -0.0533,
+          "orientation_south": -0.0002,
+          "floor_ratio": -0.0533,
+          "price_per_room": 0.4989,
+          "area_per_room": -0.0048
+        },
+        "Factor4": {
+          "total_price": 0.009,
+          "unit_price": 0.0651,
+          "floor_area": -0.0599,
+          "rooms": -0.0159,
+          "halls": -0.0216,
+          "total_floors": -0.0085,
+          "construction_year": -0.9664,
+          "building_age": 0.9515,
+          "near_subway": 0.0383,
+          "decoration_level": -0.0099,
+          "floor_type_encoded": 0.1119,
+          "orientation_south": -0.0143,
+          "floor_ratio": 0.1119,
+          "price_per_room": 0.0198,
+          "area_per_room": -0.0036
+        },
+        "Factor5": {
+          "total_price": 0.628,
+          "unit_price": -0.0713,
+          "floor_area": 0.9412,
+          "rooms": 0.1071,
+          "halls": 0.0867,
+          "total_floors": 0.0044,
+          "construction_year": 0.0553,
+          "building_age": -0.0525,
+          "near_subway": -0.0081,
+          "decoration_level": 0.001,
+          "floor_type_encoded": -0.0046,
+          "orientation_south": -0.0007,
+          "floor_ratio": -0.0046,
+          "price_per_room": 0.2992,
+          "area_per_room": 0.3732
+        }
+      },
+      "top_loadings": {
+        "Factor1": {
+          "rooms": 0.9056,
+          "area_per_room": 0.8883,
+          "price_per_room": 0.7555,
+          "halls": 0.6956,
+          "floor_area": 0.0909
+        },
+        "Factor2": {
+          "floor_type_encoded": 0.9909,
+          "floor_ratio": 0.9909,
+          "building_age": 0.0978,
+          "construction_year": 0.0966,
+          "near_subway": 0.0319
+        },
+        "Factor3": {
+          "unit_price": 0.9907,
+          "total_price": 0.7608,
+          "price_per_room": 0.4989,
+          "building_age": 0.2117,
+          "construction_year": 0.2099
+        },
+        "Factor4": {
+          "construction_year": 0.9664,
+          "building_age": 0.9515,
+          "floor_type_encoded": 0.1119,
+          "floor_ratio": 0.1119,
+          "unit_price": 0.0651
+        },
+        "Factor5": {
+          "floor_area": 0.9412,
+          "total_price": 0.628,
+          "area_per_room": 0.3732,
+          "price_per_room": 0.2992,
+          "rooms": 0.1071
+        }
+      },
+      "scores_summary": {
+        "mean": {
+          "Factor1": 0.6706,
+          "Factor2": 14.8266,
+          "Factor3": 5.7196,
+          "Factor4": -3.6388,
+          "Factor5": -5.7047
+        },
+        "std": {
+          "Factor1": 0.9997,
+          "Factor2": 6.5778,
+          "Factor3": 2.435,
+          "Factor4": 1.8493,
+          "Factor5": 2.3209
+        }
+      },
+      "composite_score": {
+        "mean": 2.6658,
+        "std": 1.31,
+        "min": -4.6733,
+        "max": 9.9648
+      }
+    }
+  },
+  "clustering": {
+    "n_clusters": 5,
+    "inertia": 61296.284442934084,
+    "inertias": [
+      79465.0,
+      73163.50071196644,
+      69283.13287098984,
+      65079.03732304041,
+      61296.284442934084,
+      57514.328910845,
+      53351.088629887076,
+      49834.27442009609,
+      45939.78677902951,
+      41993.6560905558
+    ],
+    "k_range": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cluster_profiles": [
+      {
+        "cluster_id": 0,
+        "size": 420,
+        "pct": 12.2,
+        "avg_total_price": 304.14,
+        "avg_unit_price": 32245.4,
+        "avg_area": 93.8,
+        "avg_building_age": 12.48,
+        "avg_rooms": 2.89,
+        "top_districts": {
+          "Xiaoshan": 420
+        },
+        "top_decorations": {
+          "Fine": 147,
+          "Medium": 93,
+          "Simple": 92
+        }
+      },
+      {
+        "cluster_id": 1,
+        "size": 1190,
+        "pct": 34.4,
+        "avg_total_price": 357.75,
+        "avg_unit_price": 41695.74,
+        "avg_area": 86.18,
+        "avg_building_age": 14.63,
+        "avg_rooms": 2.87,
+        "top_districts": {
+          "Gongshu": 369,
+          "Jianggan": 328,
+          "Binjiang": 299
+        },
+        "top_decorations": {
+          "Fine": 479,
+          "Medium": 257,
+          "Simple": 243
+        }
+      },
+      {
+        "cluster_id": 2,
+        "size": 257,
+        "pct": 7.4,
+        "avg_total_price": 353.51,
+        "avg_unit_price": 47146.05,
+        "avg_area": 75.67,
+        "avg_building_age": 20.75,
+        "avg_rooms": 2.81,
+        "top_districts": {
+          "Shangcheng": 257
+        },
+        "top_decorations": {
+          "Fine": 117,
+          "Simple": 54,
+          "Medium": 48
+        }
+      },
+      {
+        "cluster_id": 3,
+        "size": 1222,
+        "pct": 35.4,
+        "avg_total_price": 252.06,
+        "avg_unit_price": 26212.68,
+        "avg_area": 96.48,
+        "avg_building_age": 8.8,
+        "avg_rooms": 2.87,
+        "top_districts": {
+          "Yuhang": 502,
+          "Linping": 244,
+          "Qiantang": 210
+        },
+        "top_decorations": {
+          "Fine": 464,
+          "Medium": 293,
+          "Simple": 236
+        }
+      },
+      {
+        "cluster_id": 4,
+        "size": 366,
+        "pct": 10.6,
+        "avg_total_price": 378.4,
+        "avg_unit_price": 47128.56,
+        "avg_area": 80.84,
+        "avg_building_age": 16.77,
+        "avg_rooms": 2.92,
+        "top_districts": {
+          "Xihu": 366
+        },
+        "top_decorations": {
+          "Fine": 140,
+          "Medium": 93,
+          "Simple": 66
+        }
+      }
+    ],
+    "cluster_labels": {
+      "0": "Budget-Friendly",
+      "1": "High-End Upgrade",
+      "2": "Old Compact Unit",
+      "3": "Budget-Friendly",
+      "4": "Premium Compact Units"
+    },
+    "centroids": [
+      [
+        -0.08834043732306841,
+        -0.2959480449155233,
+        0.1739554001953199,
+        0.015456312674613767,
+        0.03962928482901082,
+        -0.06109845226708428,
+        -0.04858307809578689,
+        -0.04208401799642238,
+        -0.0120614230316528,
+        -0.06913490933767626,
+        -0.04208401799642255,
+        -0.31060796639954424,
+        -0.21745587295781055,
+        -0.3468404732410569,
+        -0.32441689409958807,
+        -0.17441478990688905,
+        -0.2756606401708374,
+        -0.2543913246769207,
+        -0.2834832035662618,
+        -0.2432409417279076,
+        2.688157450037188,
+        -0.34421642404838243,
+        -0.412786814142045
+      ],
+      [
+        0.320467430841045,
+        0.43884428317158386,
+        -0.12744171613137256,
+        -0.0034346951008888895,
+        -0.002741218406993728,
+        0.19697908166096378,
+        0.015215113643316833,
+        0.02356656363663926,
+        0.0119646309340866,
+        0.07343851990181229,
+        0.02356656363663909,
+        0.5763668418966097,
+        -0.21745587295781213,
+        0.6547341606864543,
+        0.6146196594224629,
+        -0.17441478990688972,
+        -0.27566064017083697,
+        -0.25439132467691933,
+        -0.2834832035662624,
+        0.4629754058938745,
+        -0.37200201944501654,
+        -0.344216424048383,
+        -0.4104041714388367
+      ],
+      [
+        0.28818014839092976,
+        0.862621643160197,
+        -0.5434649479799029,
+        -0.0620357574479164,
+        -0.18372952801711298,
+        0.9330537346997072,
+        0.010523194838830024,
+        -0.031557445358542255,
+        -0.09448880325295168,
+        0.05346714459978269,
+        -0.03155744535854242,
+        -0.31060796639954386,
+        -0.2174558729578107,
+        -0.3468404732410568,
+        -0.3244168940995884,
+        -0.1744147899068891,
+        -0.2756606401708374,
+        -0.25439132467692027,
+        3.5275458560502075,
+        -0.24324094172790758,
+        -0.3720020194450156,
+        -0.34421642404838193,
+        -0.412786814142045
+      ],
+      [
+        -0.4854850710623981,
+        -0.7650098733600504,
+        0.28008686598117444,
+        -0.0018177578670410006,
+        0.01747579247454346,
+        -0.5032370538674329,
+        -0.005140515799498234,
+        -0.000890265805244503,
+        0.01148000756042486,
+        -0.06911143682392845,
+        -0.0008902658052446754,
+        -0.2961640203782678,
+        0.3973641279171783,
+        -0.34155404061085176,
+        -0.321628947763384,
+        0.3187137691179064,
+        0.5037235756967929,
+        0.46485746972468295,
+        -0.28348320356626244,
+        -0.24324094172790556,
+        -0.37200201944501654,
+        -0.34421642404838293,
+        0.7519784052065167
+      ],
+      [
+        0.47799781332411667,
+        0.8612617072244412,
+        -0.3388013237263899,
+        0.04306045252556961,
+        0.034100602657497724,
+        0.45469156498307906,
+        0.01605507321882931,
+        -0.0031987838741774958,
+        0.002958852619946125,
+        0.033764871244165794,
+        -0.0031987838741776723,
+        -0.31060796639954413,
+        -0.21745587295781055,
+        -0.34684047324105677,
+        -0.32441689409958835,
+        -0.1744147899068891,
+        -0.27566064017083747,
+        -0.2543913246769206,
+        -0.2834832035662616,
+        -0.2432409417279076,
+        -0.37200201944501543,
+        2.90514899968702,
+        -0.41278681414204493
+      ]
+    ]
+  },
+  "discriminant": {
+    "lda": {
+      "accuracy": 0.6461,
+      "cv_accuracy_mean": 0.6498,
+      "cv_accuracy_std": 0.0048,
+      "confusion_matrix": [
+        [
+          126,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          357,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          77,
+          0,
+          0
+        ],
+        [
+          0,
+          367,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          110
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 126.0
+        },
+        "1": {
+          "precision": 0.4930939226519337,
+          "recall": 1.0,
+          "f1-score": 0.6604995374653099,
+          "support": 357.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 77.0
+        },
+        "3": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 367.0
+        },
+        "4": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 110.0
+        },
+        "accuracy": 0.6460945033751205,
+        "macro avg": {
+          "precision": 0.6986187845303867,
+          "recall": 0.8,
+          "f1-score": 0.732099907493062,
+          "support": 1037.0
+        },
+        "weighted avg": {
+          "precision": 0.47158585379627804,
+          "recall": 0.6460945033751205,
+          "f1-score": 0.5292172949615387,
+          "support": 1037.0
+        }
+      },
+      "feature_importance": [
+        {
+          "feature": "district_Xiaoshan",
+          "importance": 3.9969192341828355e+29
+        },
+        {
+          "feature": "district_Shangcheng",
+          "importance": 2.7102840683567063e+29
+        },
+        {
+          "feature": "district_Xihu",
+          "importance": 1.742706887103521e+29
+        },
+        {
+          "feature": "district_Yuhang",
+          "importance": 25.877
+        },
+        {
+          "feature": "district_Gongshu",
+          "importance": 23.4537
+        },
+        {
+          "feature": "district_Jianggan",
+          "importance": 21.1595
+        },
+        {
+          "feature": "district_Binjiang",
+          "importance": 20.4815
+        },
+        {
+          "feature": "district_Linping",
+          "importance": 19.1642
+        },
+        {
+          "feature": "district_Qiantang",
+          "importance": 17.9166
+        },
+        {
+          "feature": "district_Xiacheng",
+          "importance": 17.1046
+        }
+      ],
+      "n_features": 22,
+      "n_samples": 3455,
+      "n_classes": 5
+    },
+    "qda": {
+      "accuracy": 0.9961,
+      "cv_accuracy_mean": 0.9974,
+      "cv_accuracy_std": 0.0017,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 126.0
+        },
+        "1": {
+          "precision": 0.9916434540389972,
+          "recall": 0.9971988795518207,
+          "f1-score": 0.994413407821229,
+          "support": 357.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 77.0
+        },
+        "3": {
+          "precision": 0.9972602739726028,
+          "recall": 0.9918256130790191,
+          "f1-score": 0.994535519125683,
+          "support": 367.0
+        },
+        "4": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 110.0
+        },
+        "accuracy": 0.996142719382835,
+        "macro avg": {
+          "precision": 0.99778074560232,
+          "recall": 0.9978048985261679,
+          "f1-score": 0.9977897853893823,
+          "support": 1037.0
+        },
+        "weighted avg": {
+          "precision": 0.9961535522081651,
+          "recall": 0.996142719382835,
+          "f1-score": 0.9961428371372272,
+          "support": 1037.0
+        }
+      }
+    }
+  }
+}
