@@ -177,7 +177,7 @@ cd web/frontend && npm install && npm run dev
 
 部署步骤：
 
-1. 确保数据文件已提交到 Git 仓库（已在 `.gitignore` 中忽略，需 `git add -f`）
+1. 确保数据文件已提交到 Git 仓库（清洗后的部署数据已允许纳入 Git）
 2. 将仓库推送到 GitHub
 3. 在 Vercel 中导入仓库即可自动构建部署（Build 命令与输出目录由 `vercel.json` 指定）
 

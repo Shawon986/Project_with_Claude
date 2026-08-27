@@ -24,8 +24,12 @@ env/
 # Data files
 data/raw/*.csv
 data/raw/*.json
+# The Vercel API reads the cleaned dataset at runtime.
+!data/cleaned/
 data/cleaned/*.csv
 data/cleaned/*.json
+!data/cleaned/hangzhou_cleaned_3455_20260608_153036.csv
+!data/cleaned/hangzhou_cleaned_3455_20260608_153036.json
 analysis/results/*.json
 analysis/results/*.csv
 
