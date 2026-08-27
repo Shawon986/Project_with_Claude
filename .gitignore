@@ -45,7 +45,9 @@ database/*.db
 
 # Node
 node_modules/
-web/frontend/dist/
+# Note: web/frontend/dist is NOT ignored — the Vercel Python function
+# bundles and serves the built frontend from it.
+!web/frontend/dist/
 
 # OS
 .DS_Store

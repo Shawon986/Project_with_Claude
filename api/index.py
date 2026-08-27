@@ -17,6 +17,8 @@ import os
 
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from mangum import Mangum
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,10 +44,10 @@ app.add_middleware(
 
 @app.middleware("http")
 async def restore_api_path(request, call_next):
-    """Restore the original API path after Vercel's internal rewrite."""
+    """Restore the original path after Vercel's rewrite to /api/index?path=..."""
     rewritten_path = request.query_params.get("path")
-    if request.scope["path"] == "/api/index" and rewritten_path:
-        request.scope["path"] = "/api/" + rewritten_path.lstrip("/")
+    if request.scope["path"] == "/api/index":
+        request.scope["path"] = "/" + (rewritten_path or "").lstrip("/")
     return await call_next(request)
 
 # ============================================================
@@ -653,6 +655,28 @@ async def get_descriptive_stats():
 @app.get("/api/health")
 async def health_check():
     return {"status": "ok", "listings_count": len(get_rows())}
+
+
+# ============================================================
+# FRONTEND (built by the Vercel build command, served by this function)
+# ============================================================
+
+FRONTEND_DIR = os.path.join(ROOT, "web", "frontend", "dist")
+
+if os.path.isdir(FRONTEND_DIR):
+    app.mount(
+        "/assets",
+        StaticFiles(directory=os.path.join(FRONTEND_DIR, "assets")),
+        name="assets",
+    )
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_frontend(full_path: str = ""):
+        """Serve the Vue SPA (index.html fallback for client-side routes)."""
+        file_path = os.path.join(FRONTEND_DIR, full_path) if full_path else os.path.join(FRONTEND_DIR, "index.html")
+        if os.path.exists(file_path) and not os.path.isdir(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
 
 
 # Vercel Python runtime entry point
