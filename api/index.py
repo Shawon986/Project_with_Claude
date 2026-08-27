@@ -39,6 +39,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+@app.middleware("http")
+async def restore_api_path(request, call_next):
+    """Restore the original API path after Vercel's internal rewrite."""
+    rewritten_path = request.query_params.get("path")
+    if request.scope["path"] == "/api/index" and rewritten_path:
+        request.scope["path"] = "/api/" + rewritten_path.lstrip("/")
+    return await call_next(request)
+
 # ============================================================
 # DATA LOADING (pure Python)
 # ============================================================

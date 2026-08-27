@@ -3,7 +3,7 @@
   "buildCommand": "npm install --prefix web/frontend && npm run build --prefix web/frontend",
   "outputDirectory": "web/frontend/dist",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index" },
+    { "source": "/api/:path*", "destination": "/api/index?path=:path*" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "functions": {
