@@ -1,5 +1,8 @@
 To run the website into your browser please follow the command below :
 
+To run the Website with backend :
+
+    python -m uvicorn web.backend.app:app --reload --host 127.0.0.1 --port 8000
 
 
 To run the Website with frontend :-
